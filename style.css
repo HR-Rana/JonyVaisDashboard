@@ -1,0 +1,145 @@
+.siteAndNavbar {
+    width: 16%;
+    height: 100%;
+}
+
+.siteAndNavbar .siteNav-box {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    padding: 10px;
+}
+
+.sitebar-profile {
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+.sitebar-profile img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.sitebar-profile span {
+    font-weight: 500;
+}
+
+
+nav ul {
+    width: 100%;
+    padding: 0;
+    line-height: 35px;
+}
+
+nav ul li {
+    width: 100%;
+    list-style: none;
+    padding: 2px 5px;
+    justify-content: space-between;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+nav ul li:hover {
+    background-color: gray;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a span {
+    margin-right: 5px;
+}
+
+nav ul li:hover a {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar */
+
+.navigation {
+    width: 85%;
+    padding: 5px 15px;
+    /* box-shadow:0px 1px 4px 0px rgba(94,104,121); */
+}
+
+.navigation span {
+    cursor: pointer;
+}
+
+.right {
+    width: 20%;
+    align-items: center;
+    text-align: right;
+}
+
+.right img {
+    width: 30%;
+    margin: 5px;
+}
+
+.graphs-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chartOne {
+    width: 48%;
+}
+
+.chartOne #myChart1 {
+    width: 100%;
+    height: 800%;
+    display: flex;
+    object-fit: contain;
+}
+
+.chartOne:nth-child(1) {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* password page */
+
+.change-password .card-body {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.change-password .card-body span {
+    display: inline-block;
+    width: 48% !important;
+    margin: 10px 0;
+}
+.change-password .card-body span input{
+   width: 100%;
+   padding: 5px;
+}
+.change-password .card-footer button{
+   text-align: center;
+}
