@@ -125,7 +125,7 @@
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
-                               <td>Bank Name</td>
+                                <td>Bank Name</td>
                                 <td>$560 </td>
                                 <td>06-08-2023</td>
                             </tr>
@@ -139,7 +139,7 @@
                             <tr>
                                 <th scope="row">4</th>
                                 <td>Jacob</td>
-                                 <td>Bank Name</td>
+                                <td>Bank Name</td>
                                 <td>$560 </td>
                                 <td>06-08-2023</td>
                             </tr>
@@ -167,118 +167,19 @@
                     <div class="container-fluid">
                         <h4>Transition History Graph </h4>
 
-                        <div class="graphs-area d-flex justify-content-between">
+                        <div class="graphs-area d-flex justify-content-between mt-5">
 
-                            <div class="chartOne">
-                                <canvas id="myChart1"></canvas>
-                            </div>
-                            <!-- <div class="chartOne w-50">
-                                <canvas id="myChart2"></canvas>
-                            </div>
                             <div class="chartOne w-50">
-                                <canvas id="myChart3"></canvas>
-                            </div> -->
+                                <canvas id="myChart"></canvas>
+                            </div>
                         </div>
                     </div>
                     <hr>
-                    <!-- <h3>Info Cards</h3>
-                    <div class="row my-3">
-                        <div class="col-md-4 col-sm-6 col-12">
-                            <div class="card my-2 text-white bg-primary p-3">
-                                <div class="card-title">
-                                    <h4>card title goes to here</h4>
-                                    <hr>
-                                </div>
-                                <div class="">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tenetur nobis!
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-warning w-100" href="">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
-                            <div class="card text-white bg-secondary p-3">
-                                <div class="card-title">
-                                    <h4>card title goes to here</h4>
-                                    <hr>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tenetur nobis!
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-light w-100" href="">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
-                            <div class="card  bg-light p-3">
-                                <div class="card-title">
-                                    <h4>card title goes to here</h4>
-                                    <hr>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tenetur nobis!
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-info w-100" href="">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
-                            <div class="card text-white bg-warning p-3">
-                                <div class="card-title">
-                                    <h4>card title goes to here</h4>
-                                    <hr>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tenetur nobis!
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-dark w-100" href="">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
-                            <div class="card text-white bg-info p-3">
-                                <div class="card-title">
-                                    <h4>card title goes to here</h4>
-                                    <hr>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tenetur nobis!
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-danger w-100" href="">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
-                            <div class="card text-white bg-danger p-3">
-                                <div class="card-title">
-                                    <h4>card title goes to here</h4>
-                                    <hr>
-                                </div>
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tenetur nobis!
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-primary w-100" href="">see more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+
+                </div>
             </main>
         </section>
     </section>
-
 
 
 
@@ -303,7 +204,31 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="../js/Custom.js"></script>
+    <script src="./js/Custom.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>
