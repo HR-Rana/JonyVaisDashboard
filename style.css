@@ -1,6 +1,12 @@
 .siteAndNavbar {
     width: 16%;
     height: 100%;
+    position: relative;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .siteAndNavbar .siteNav-box {
@@ -9,6 +15,11 @@
     background-color: rgb(240, 240, 240);
     position: fixed;
     padding: 10px;
+    transition: .9s;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
 }
 
 .sitebar-profile {
@@ -82,6 +93,7 @@ nav ul li:hover a {
     width: 85%;
     padding: 5px 15px;
     /* box-shadow:0px 1px 4px 0px rgba(94,104,121); */
+
 }
 
 .navigation span {
@@ -127,7 +139,7 @@ nav ul li:hover a {
 /* password page */
 
 .change-password .card-body {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -136,10 +148,34 @@ nav ul li:hover a {
     width: 48% !important;
     margin: 10px 0;
 }
-.change-password .card-body span input{
-   width: 100%;
-   padding: 5px;
+
+.change-password .card-body span input {
+    width: 100%;
+    padding: 5px;
 }
-.change-password .card-footer button{
-   text-align: center;
+
+.change-password .card-footer button {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .siteAndNavbar {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 5px 15px;
+        /* box-shadow:0px 1px 4px 0px rgba(94,104,121); */
+
+    }
 }
