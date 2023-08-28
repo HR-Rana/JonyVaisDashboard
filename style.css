@@ -86,8 +86,8 @@ nav ul li:hover a {
 .logo #times {
     font-size: 25px;
     position: absolute;
-    top: 20px;
-    right: -30px;
+    top: 40px;
+    right: 10px;
     cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
