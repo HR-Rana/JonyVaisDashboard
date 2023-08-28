@@ -1,5 +1,4 @@
 
-
  const BarIcon = document.getElementById("bars");
   const Sitebar = document.getElementById("siteAndNavbar");
 const SitebarArea = document.getElementById("leftSidebar");
@@ -13,8 +12,10 @@ const mainContent = document.getElementById("right-content");
       SitebarArea.style.display="none";
       mainContent.style.width="100%";
       Sitebar.classList.remove("siteAndNavbar");
+
     }else{
-      Sitebar.classList.add("siteAndNavbar")
+      Sitebar.classList.add("siteAndNavbar");
+      Sitebar.classList.add("bars-hover");
       Sitebar.style.width="15%";
       Sitebar.style.display="block";
         Sitebar.style.transition=".6s";
@@ -25,6 +26,16 @@ const mainContent = document.getElementById("right-content");
     }
      
  })
+
+  $("#times").click(function(){
+    $('.siteAndNavbar').hide(200);
+     mainContent.style.width="100%";
+  })
+
+
+
+
+
 
 
   const ctx = document.getElementById('myChart1');
