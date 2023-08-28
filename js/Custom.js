@@ -3,18 +3,25 @@
  const BarIcon = document.getElementById("bars");
   const Sitebar = document.getElementById("siteAndNavbar");
 const SitebarArea = document.getElementById("leftSidebar");
-const mainContent = document.getElementById("MainContent")
+const mainContent = document.getElementById("right-content");
+
+
  BarIcon.addEventListener("click", function(){
-    if (Sitebar) {
-      Sitebar.classList.remove("siteAndNavbar");
+    if (Sitebar.classList.contains("siteAndNavbar")) {
         Sitebar.style.width="0%";
+        Sitebar.style.transition=".6s";
       SitebarArea.style.display="none";
-      mainContent.style.width="100%"
+      mainContent.style.width="100%";
+      Sitebar.classList.remove("siteAndNavbar");
     }else{
+      Sitebar.classList.add("siteAndNavbar")
       Sitebar.style.width="15%";
-      Sitebar.classList.add("siteAndNavbar");
+      Sitebar.style.display="block";
+        Sitebar.style.transition=".6s";
+      mainContent.style.transition=".6s";
+      mainContent.style.width="84%";
       SitebarArea.style.display="block";
-      mainContent.style.width="80%"
+      SitebarArea.style.transition=".8s";
     }
      
  })
