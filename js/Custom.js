@@ -7,15 +7,15 @@ const mainContent = document.getElementById("right-content");
 
  BarIcon.addEventListener("click", function(){
     if (Sitebar.classList.contains("siteAndNavbar")) {
-        Sitebar.style.width="0%";
+      Sitebar.classList.remove("siteAndNavbar");
+
+          Sitebar.style.width="0%";
         Sitebar.style.transition=".6s";
       SitebarArea.style.display="none";
       mainContent.style.width="100%";
-      Sitebar.classList.remove("siteAndNavbar");
 
     }else{
       Sitebar.classList.add("siteAndNavbar");
-      Sitebar.classList.add("bars-hover");
       Sitebar.style.width="15%";
       Sitebar.style.display="block";
         Sitebar.style.transition=".6s";

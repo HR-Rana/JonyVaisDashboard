@@ -155,7 +155,7 @@
                         <div class="graphs-area d-flex justify-content-between">
 
                             <div class="chartOne">
-                                <canvas id="myChart5"></canvas>
+                                <canvas id="paymentChart"></canvas>
                             </div>
                         </div>
                     </div>
@@ -283,9 +283,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/Custom.js"></script>
     <script>
-        const ctx5 = document.getElementById('myChart5');
+        const paymentChart = document.getElementById('paymentChart');
 
-        new Chart(ctx5, {
+        new Chart(paymentChart, {
             type: 'line',
             data: {
                 labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
