@@ -86,8 +86,8 @@ nav ul li:hover a {
 .logo #times {
     font-size: 25px;
     position: absolute;
-    top: 40px;
-    right: 10px;
+    top: -05px;
+    right: -02px;
     cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -302,21 +302,34 @@ nav ul li:hover a {
         margin: 10px 0;
     }
 
-    .change-password .cart-title{
+    .change-password .cart-title {
         text-align: center;
     }
 
     .change-password .card-body {
-        width: 80%;
-        margin:0 auto;        
+        width: 95%;
+        margin: 0 auto;
         display: block;
         justify-content: center;
     }
 
-    .change-password .card-body span{
+    .change-password .card-body span {
         width: 100% !important;
     }
-    .change-password .card-footer{
-       text-align: right;
+
+    .change-password .card-footer {
+        text-align: right;
+    }
+}
+
+
+@media (max-width:450px) {
+    .right {
+        display: flex;
+        justify-content: end;
+    }
+    .right img {
+        width: 30px;
+        height: 30px;
     }
 }
