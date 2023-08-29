@@ -1,45 +1,58 @@
-.logo {
-    width: 8%;
+.siteAndNavbar {
+    width: 16%;
+    height: 100%;
+    position: relative;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
-.logo img {
-    width: 60px;
-    height: 60px;
+.siteAndNavbar .siteNav-box {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    padding: 10px;
+    transition: .9s;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
+    z-index: 555;
 }
 
-.signInWith {
+
+
+.sitebar-profile {
     display: flex;
+    height: 10%;
     align-items: center;
 }
 
-.signInWith h5 {
-    margin-top: 5px;
-}
-
-.signInWith span {
-    width: 40%;
-    padding: 8px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.signInWith span i {
+.sitebar-profile img {
     width: 40px;
     height: 40px;
-    padding: 6px;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 134, 171);
-    color: white;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.sitebar-profile span {
+    font-weight: 500;
+}
+
+
+nav ul {
+    width: 100%;
+    padding: 0;
+    line-height: 35px;
+}
+
+nav ul li {
+    width: 100%;
+    list-style: none;
+    padding: 2px 5px;
+    justify-content: space-between;
     transition: .4s;
     -webkit-transition: .4s;
     -moz-transition: .4s;
@@ -47,216 +60,268 @@
     -o-transition: .4s;
 }
 
-.signInWith span i:nth-child(2) {
-    background: linear-gradient(to bottom, rgb(255, 93, 93), darkred, green);
+nav ul li:hover {
+    background-color: gray;
 }
 
-.signInWith span i:hover:nth-child(2):hover {
-    background-color: whitesmoke !important;
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.signInWith span i:hover {
-    color: rgb(0, 134, 171);
-    background-color: whitesmoke;
-    border: .2px solid lightblue;
+nav ul li a span {
+    margin-right: 5px;
 }
 
-.or {
+nav ul li:hover a {
+    color: rgb(255, 255, 255);
+}
+
+
+.logo {
     position: relative;
 }
 
-.or strong {
-    width: 40px;
-    height: 40px;
-    padding: 7px;
+.logo #times {
+    font-size: 25px;
     position: absolute;
-    left: 45%;
-    top: -20px;
-    z-index: 222;
-    text-transform: uppercase;
-    background-color: rgb(255, 255, 255);
+    top: -05px;
+    right: -02px;
+    cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    display: none;
+
 }
 
-.row img {
+.logo #times:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+/* navbar */
+
+.navigation {
     width: 85%;
-}
-
-.form-area {
-    width: 80%;
-    margin: 15px auto;
-}
-
-.col-md-6:nth-child(2) {
-    position: relative;
-}
-
-.form-area::after {
-    content: " ";
-    width: 1px;
-    height: 250px;
-    background-color: lightgray;
-    position: absolute;
-    top: 30%;
-    left: 0;
-}
-
-form {
-    margin-top: 0;
-    margin-bottom: 0 !important;
-}
-
-form div label {
-    margin-top: 20px;
-}
-
-form div:nth-child(1) label {
-    margin-top: 0px;
-}
-
-form div:nth-child(2) {
-    margin-bottom: 0;
-}
-
-form div label {
-    font-size: 18px;
-}
-
-form div input {
-    width: 100%;
-    padding: 7px 10px;
-    background-color: rgb(233, 233, 233);
-    border: 1px solid transparent;
-    outline: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-form div input:focus {
-    border: .5px solid rgb(0, 200, 147);
-}
-
-form input[type=submit] {
-    background-color: rgb(4, 95, 144);
-    color: white;
-    border: none;
-    text-transform: capitalize;
-    font-weight: 500;
     padding: 5px 15px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
-form .checkbox {
-    width: 50%;
-    height: 100%;
+.navigation span {
+    cursor: pointer;
+}
+
+.right {
+    width: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    justify-content: end;
+    font-weight: 500;
 }
 
-form .checkbox input {
-    width: fit-content;
-    margin-right: 5px;
+.right img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
 }
 
-form .checkbox p {
+.graphs-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chartOne {
+    width: 48%;
+}
+
+.chartOne #myChart1 {
     width: 100%;
-    height: 100%;
-    margin: auto 0;
+    height: 80%;
+    display: flex;
+    object-fit: contain;
 }
 
-form .Remember {
-    margin-top: 0;
+.chartOne:nth-child(1) {
+    width: 100%;
+    margin-bottom: 50px;
 }
 
-.form-area li {
-    list-style: none;
-    margin-top: -30px;
+
+
+
+/* password page */
+
+.change-password .card-body {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.change-password .card-body span {
+    display: inline-block;
+    width: 48% !important;
+    margin: 10px 0;
+}
+
+.change-password .card-body span input {
+    width: 100%;
+    padding: 5px;
+}
+
+.change-password .card-footer button {
+    text-align: center;
+}
+
+
+
+
+
 
 
 
 
 
 @media (max-width:992px) {
-    .signInWith span {
-        width: 55%;
-        margin: 20px 0;
+    .siteAndNavbar {
+        width: 26%;
     }
 
-    .signInWith h5 {
-        font-size: 18px;
+    .siteAndNavbar .siteNav-box {
+        width: 23%;
     }
 
-    .signInWith span i {
-        width: 30px;
-        height: 30px;
+    .siteAndNavbar {
+        display: none;
+    }
+
+    .right {
+        width: 25%;
+    }
+
+    .sitebar-profile span {
+        font-size: 14px;
     }
 }
+
+
 
 @media (max-width:768px) {
-
-    .form-area {
-        width: 100%;
-        padding: 20px;
-        background-color: whitesmoke;
+    .siteAndNavbar {
+        display: none;
     }
 
-    .signInWith span {
+    .siteAndNavbar {
+        width: 0% !important;
+    }
+
+    .siteAndNavbar .siteNav-box {
+        width: 30% !important;
+
+    }
+
+    .logo #times {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .sitebar-profile span {
+        font-size: 14px;
+    }
+
+    .navigation {
+        width: 100% !important;
+        padding: 5px 15px;
+        /* box-shadow:0px 1px 4px 0px rgba(94,104,121); */
+
+    }
+
+    .right {
         width: 30%;
+
+    }
+
+
+}
+
+@media (max-width:576px) {
+    .sitebar-profile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .siteAndNavbar {
+        width: 20% !important;
+    }
+
+    .siteAndNavbar .siteNav-box {
+        width: 50% !important;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .right {
+        width: 40% !important;
+        font-size: 14px;
+    }
+
+    .graphs-area {
+        display: block;
+        width: 100%;
+    }
+
+    .chartOne {
+        width: 100% !important;
+        height: fit-content;
         margin: 20px 0;
     }
 
-    .form-area::after {
-        display: none;
+    .chartOne #myChart2 {
+        height: 250px;
+        width: 100% !important;
+        object-fit: contain;
     }
 
-    .col-md-6 img {
-        display: none;
+    .chartOne #myChart3 {
+        height: 250px;
+        width: 100% !important;
+        object-fit: contain;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .change-password .cart-title {
+        text-align: center;
+    }
+
+    .change-password .card-body {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .change-password .card-body span {
+        width: 100% !important;
+    }
+
+    .change-password .card-footer {
+        text-align: right;
     }
 }
 
-
-@media (max-width:576px) {
-    .form-area {
-        width: 100%;
-    }
-
-    .signInWith span {
-        width: fit-content;
-        padding: 8px;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-    }
-
-    .signInWith h5 {
-        font-size: 15px;
-        font-weight: 500;
-    }
-
-    .signInWith span i {
-        height: 30px;
-        width: 30px;
-        font-size: 16px;
-        margin: 0px 5px;
-    }
-
-    .form-area li {
-       font-size: 13px;
-    }
-
-}
